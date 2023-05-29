@@ -38,5 +38,10 @@ func main() {
 	}
 
 	p1.attack(p2)
+	attack(p2, p1)
 
+}
+
+func attack(attacker Attacker, target *Person) {
+	attacker.attack(target)
 }
